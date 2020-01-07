@@ -1,2 +1,1 @@
-# gateway
-Nginx server preconfigured for Boodskap IoT Platform
+# Nginx server preconfigured for Boodskap IoT Platform
