@@ -13,9 +13,9 @@ WORKDIR /
 
 COPY etc/ /etc/
 COPY root/ /root/
-COPY start-boodskap-ui.sh .
+COPY start-gateway.sh .
 
-RUN chmod +x start-boodskap-ui.sh
+RUN chmod +x start-gateway.sh
 
 RUN mkdir -p /root/webapps
 WORKDIR /root/webapps
@@ -29,4 +29,4 @@ RUN rm -f /etc/nginx/sites-enabled/default
 
 EXPOSE 80 443
 
-CMD ["/start-boodskap-ui.sh"]
+CMD ["/start-gateway.sh"]

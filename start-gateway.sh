@@ -10,4 +10,9 @@ else
     pm2 start boodskap-platform-node.js
 fi
 
+if [ -f "/webapps/start-webapps.sh" ]; then
+    echo "Starting custom webapps"
+    /webapps/start-webapps.sh
+fi
+
 /bin/bash -c "trap : TERM INT; sleep infinity & wait"
