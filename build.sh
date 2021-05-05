@@ -1,1 +1,1 @@
-docker build -t boodskapiot/gateway:latest -t boodskapiot/gateway:3.0.9 .
+docker build -t boodskapiot/gateway:latest -t boodskapiot/gateway:3.0.20 .
